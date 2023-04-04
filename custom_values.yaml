@@ -1,0 +1,25 @@
+globalConfig:
+  admin_sk: "0xb2371a70c297106449f89445f20289e6d16942f08f861b5e95cbcf0462e384c1"
+  rpc_endpoint: "127.0.0.1:50004"
+
+sinksConfig:
+- webhook_sink:
+    name: webhook_sink
+    default: true
+    url: "http://192.168.160.20:8000"
+
+clusterName: "test-cluster"
+
+playbookRepos:
+  cita_robusta_actions:
+    url: "https://github.com/cita-cloud/robusta-actions.git"
+
+# This is your custom playbook
+customPlaybooks:
+- triggers:
+    - on_schedule:
+        fixed_delay_repeat:
+          repeat: -1             # number of times to run or -1 to run forever
+          seconds_delay: 60
+  actions:
+    - check_schedule: {}
