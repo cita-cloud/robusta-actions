@@ -5,8 +5,7 @@ description = ""
 authors = ["Rivtower Technologies <contact@rivtower.com>"]
 
 [tool.poetry.dependencies]
-kubernetes = "^12.0.1"
-openai = "^0.26.0"
+tenacity = "^8.2.2"
 
 [tool.poetry.dev-dependencies]
 robusta-cli = "^0.10.14"

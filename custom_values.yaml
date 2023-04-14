@@ -1,6 +1,11 @@
 globalConfig:
-  admin_sk: "0xb2371a70c297106449f89445f20289e6d16942f08f861b5e95cbcf0462e384c1"
-  rpc_endpoint: "127.0.0.1:50004"
+  admin_sk: "b2371a70c297106449f89445f20289e6d16942f08f861b5e95cbcf0462e384c1"
+  rpc_endpoint: "sla-overlord-node0.cita.svc:50004"
+  call_endpoint: "sla-overlord-node0.cita.svc:50002"
+  start_hour: 8
+  end_hour: 18
+  sleeping_interval: 60
+  timezone: 8
 
 sinksConfig:
 - webhook_sink:
